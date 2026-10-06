@@ -1,3 +1,4 @@
+
 # LocalLang Tanzania — Frontend
 
 ## Files
@@ -15,3 +16,5 @@ Open `index.html` in Chrome. An internet connection is needed for Google Fonts a
 - The conversation form is a frontend demo only. Connect it to your LocalLang/FastAPI translation endpoint before using it for real translation.
 - Image URLs are external placeholders and can be replaced with your own locally stored photos.
 - The list of 45 community/language names is illustrative and should be verified against the project's trusted sources before publication.
+=======
+# front-end-local
