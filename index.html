@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LocalLang Tanzania — tafsiri lugha za asili za Tanzania kwa Kiswahili na Kiingereza kwa msaada wa AI." id="pageDescription">
+  <title id="pageTitle">LocalLang Tanzania | Lugha Zetu, Uelewa Wetu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Menyu kuu" data-i18n-aria="navLabel">
+      <a class="brand" href="#home" aria-label="LocalLang Tanzania mwanzo" data-i18n-aria="brandLabel">
+        <span class="brand-mark"><i class="fa-mark">L</i><span class="brand-dot"></span></span>
+        <span class="brand-name">LocalLang <small>Tanzania</small></span>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Fungua menyu" data-i18n-aria="openMenu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home" data-i18n="navHome">Nyumbani</a>        
+        <a href="#languages" data-i18n="navLanguages">Lugha za Tanzania</a>
+        <a href="#about" data-i18n="navAbout">Inapotumika</a>
+        <a href="#how-it-works" data-i18n="navHow">Jinsi Inavyofanya Kazi</a>
+      </div>
+      <div class="nav-actions">
+        <label class="language-select" aria-label="Chagua lugha ya tovuti" data-i18n-aria="languageLabel">
+          <span>🌐</span>
+          <select id="siteLanguage"><option value="sw">Kiswahili</option><option value="en">English</option></select>
+        </label>
+        <button class="theme-toggle" id="themeToggle" aria-label="Badili mwonekano wa mwanga" data-i18n-aria="themeToggle">☾</button>
+        <a class="btn btn-primary nav-cta" href="#conversation"><span>▣</span><span data-i18n="startConversation">Anza Mazungumzo</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" id="heroImage" role="img" aria-label="Picha zinazoonyesha matumizi ya LocalLang" data-i18n-aria="heroImage"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroEyebrow">AI inayounganisha watu</span></span>
+          <h1 data-i18n-html="heroTitle">Lugha za Asili za Tanzania</h1>
+          <p data-i18n="heroDescription">Wasiliana kwa lugha yako ya asili. LocalLang inakusaidia kutafsiri lugha za Tanzania kwenda Kiswahili na Kiingereza kwa urahisi.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary btn-large" href="#conversation"><span>▣</span><span data-i18n="startConversation">Anza Mazungumzo</span><span>→</span></a>
+            <a class="btn btn-glass btn-large" href="#how-it-works"><span data-i18n="heroHow">Jinsi inavyofanya kazi</span><span>↗</span></a>
+          </div>
+
+
+        </div>
+        <div class="translation-card">
+          <div class="translation-top"><span class="live-dot"></span><span data-i18n="translationExample">Mfano wa tafsiri</span><span class="sound-icon">⌁</span></div>
+          <div class="translation-line"><small data-i18n="sukuma">KISUKUMA</small><p data-i18n="sampleSwahili">“Bwana, unasaidiaje?”</p><span class="audio-btn" aria-label="Sauti ya mfano" data-i18n-aria="sampleAudio">◖))</span></div>
+          <div class="translate-arrow">↓</div>
+          <div class="translation-line"><small data-i18n="swahili">KISWAHILI</small><p data-i18n="sampleSwahili">“Bwana, unasaidiaje?”</p><span class="audio-btn" aria-hidden="true">◖))</span></div>
+          <div class="translation-line english"><small data-i18n="english">ENGLISH</small><p data-i18n="sampleEnglish">“Sir, how can I help you?”</p><span class="audio-btn" aria-hidden="true">◖))</span></div>
+          <small class="demo-note" data-i18n="demoNote">Mfano wa muonekano — hakiki tafsiri kabla ya matumizi.</small>
+        </div>
+        <div class="hero-controls">
+          <button id="prevSlide" aria-label="Picha iliyopita" data-i18n-aria="previousImage">‹</button><div class="slide-dots" id="slideDots"><button class="selected" aria-label="Picha 1" data-i18n-aria="slide1"></button><button aria-label="Picha 2" data-i18n-aria="slide2"></button><button aria-label="Picha 3" data-i18n-aria="slide3"></button><button aria-label="Picha 4" data-i18n-aria="slide4"></button><button aria-label="Picha 5" data-i18n-aria="slide5"></button></div><button id="nextSlide" aria-label="Picha inayofuata" data-i18n-aria="nextImage">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="language-strip section" id="languages">
+      <div class="container">
+        <div class="section-heading inline-heading">
+          <div><span class="eyebrow blue-eyebrow" data-i18n="languageEyebrow">UTAJIRI WA LUGHA ZETU</span><h2 data-i18n="languageTitle">Makabila ya Asili ya Tanzania</h2><p data-i18n="languageDescription">Gundua lugha na jamii mbalimbali zinazounda utambulisho wetu.</p></div>
+          <a href="#conversation" class="text-link"><span data-i18n="discoverLanguages">Gundua lugha zaidi</span><span>→</span></a>
+        </div>
+        <div class="tribe-marquee" aria-label="Orodha ya makabila ya Tanzania" data-i18n-aria="tribeList">
+          <div class="tribe-track" id="tribeTrack"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section section" id="about">
+      <div class="container audience-panel">
+        <div class="audience-copy">
+          <h2 data-i18n-html="aboutTitle">Teknolojia inayofanya<br><span>mawasiliano yawe rahisi.</span></h2>
+          <p data-i18n="aboutDescription">LocalLang inalenga kusaidia watu kuelewana katika elimu, afya, huduma za jamii na biashara — bila kuacha lugha zao za asili nyuma.</p>
+         
+        </div>
+          <div class="profession-marquee" aria-label="Taaluma zinazotumia LocalLang" data-i18n-aria="professionList">
+            <div class="profession-track" id="professionTrack">
+              <div class="profession-row">
+                <article class="profession-card">
+                  <img src="image/school.jpg" alt="Mwalimu akifundisha wanafunzi" data-i18n-alt="teacherImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="teachersTitle">Walimu na Wanafunzi</h4><p data-i18n="teachersDescription">Rahisisha ufundishaji na ujifunzaji.</p></div>
+                </article>
+                <article class="profession-card">
+                  <img src="image/hospital.jpg" alt="Daktari akitoa huduma kwa mgonjwa" data-i18n-alt="doctorImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="doctorsTitle">Madaktari na Wagonjwa</h4><p data-i18n="doctorsDescription">Saidia mawasiliano katika huduma za afya.</p></div>
+                </article>
+                <article class="profession-card">
+                  <img src="image/social.jpg" alt="Wanajamii wakishirikiana" data-i18n-alt="communityImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="communityTitle">Jamii za Mitaa</h4><p data-i18n="communityDescription">Elewana kwa lugha inayokufanya ujisikie nyumbani.</p></div>
+                </article>
+                <article class="profession-card">
+                  <img src="image/biashara.jpg" alt="Mmiliki wa biashara akitoa huduma kwa mteja" data-i18n-alt="businessImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="businessTitle">Biashara na Huduma</h4><p data-i18n="businessDescription">Wafikie wateja kwa mawasiliano bora.</p></div>
+                </article>
+                <article class="profession-card">
+                  <img src="image/society.jpg" alt="Jamii ya eneo la vijijini" data-i18n-alt="farmersImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="farmersTitle">Wakulima</h4><p data-i18n="farmersDescription">Fikisha maarifa ya kilimo na huduma kwa wakulima.</p></div>
+                </article>
+                <article class="profession-card">
+                  <img src="image/socio.jpg" alt="Wageni wakishiriki utamaduni wa Tanzania" data-i18n-alt="tourismImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="tourismTitle">Utalii na Ukarimu</h4><p data-i18n="tourismDescription">Wasaidie wageni kufurahia safari na huduma zao.</p></div>
+                </article>
+                <article class="profession-card">
+                  <img src="image/mtumiaji%20anaongea.jpg" alt="Msafiri akitumia simu kuwasiliana" data-i18n-alt="transportImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="transportTitle">Usafiri</h4><p data-i18n="transportDescription">Toa maelekezo na taarifa kwa wasafiri kwa uwazi.</p></div>
+                </article>
+                <article class="profession-card">
+                  <img src="image/communication.jpg" alt="Watu wakizungumza kuhusu huduma za jamii" data-i18n-alt="publicServicesImage" loading="lazy">
+                  <div class="profession-caption"><h4 data-i18n="publicServicesTitle">Huduma za Jamii</h4><p data-i18n="publicServicesDescription">Rahisisha upatikanaji wa taarifa na msaada.</p></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered"><span class="eyebrow blue-eyebrow" data-i18n="howEyebrow">HATUA KWA HATUA</span><h2 data-i18n="howTitle">Jinsi inavyofanya kazi</h2><p data-i18n="howDescription">Njia rahisi ya kuwasiliana katika lugha mbalimbali.</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><img class="step-image" src="image/diffeent%20langauage.jpg" alt="Watu wakizungumza katika lugha tofauti" data-i18n-alt="stepLanguageImage" loading="lazy"><h3 data-i18n="stepLanguageTitle">Chagua lugha</h3><p data-i18n="stepLanguageDescription">Chagua lugha ya asili unayotaka kutumia na lugha lengwa.</p></article>
+          <article class="step-card"><span class="step-number">02</span><img class="step-image" src="image/mtumiaji%20anaongea.jpg" alt="Mtumiaji akizungumza kupitia simu" data-i18n-alt="stepSpeakImage" loading="lazy"><h3 data-i18n="stepSpeakTitle">Andika au zungumza</h3><p data-i18n="stepSpeakDescription">Ingiza ujumbe wako au tumia sauti pale kipengele hicho kinapowezeshwa.</p></article>
+          <article class="step-card"><span class="step-number">03</span><img class="step-image" src="image/INAELEWA.png" alt="Akili bandia ikichakata ujumbe" data-i18n-alt="stepProcessImage" loading="lazy"><h3 data-i18n="stepProcessTitle">AI huchakata</h3><p data-i18n="stepProcessDescription">Mfumo huchambua ujumbe na kutayarisha tafsiri kulingana na data iliyopo.</p></article>
+          <article class="step-card"><span class="step-number">04</span><img class="step-image" src="image/inatafasili.jpg" alt="Mtumiaji akisikiliza au kupitia tafsiri" data-i18n-alt="stepReviewImage" loading="lazy"><h3 data-i18n="stepReviewTitle">Pitia tafsiri</h3><p data-i18n="stepReviewDescription">Soma matokeo na hakikisha maana inafaa kwa muktadha.</p></article>
+          <article class="step-card"><span class="step-number">05</span><img class="step-image" src="image/communication.jpg" alt="Watu wakishiriki mazungumzo" data-i18n-alt="stepShareImage" loading="lazy"><h3 data-i18n="stepShareTitle">Shiriki ujumbe</h3><p data-i18n="stepShareDescription">Tumia tafsiri kuwasiliana na mtu mwingine kwa uelewa zaidi.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand-col"><a class="brand" href="#home"><span class="brand-mark"><i class="fa-mark">L</i><span class="brand-dot"></span></span><span class="brand-name">LocalLang <small>Tanzania</small></span></a><p><span data-i18n="footerSlogan">Lugha zetu. Uelewa wetu.</span><br><span data-i18n="footerDescription">Teknolojia inayowaunganisha watu.</span></p><div class="social-links"><a href="#" aria-label="Instagram" data-i18n-aria="instagram">ig</a><a href="#" aria-label="YouTube" data-i18n-aria="youtube">▶</a><a href="#" aria-label="LinkedIn" data-i18n-aria="linkedin">in</a></div></div>
+      <div class="footer-col"><h3 data-i18n="quickLinks">Viungo vya Haraka</h3><a href="#home" data-i18n="navHome">Nyumbani</a><a href="#about" data-i18n="navAbout">Kuhusu Sisi</a><a href="#languages" data-i18n="navLanguages">Lugha za Tanzania</a><a href="#how-it-works" data-i18n="navHow">Jinsi Inavyofanya Kazi</a></div>
+      <div class="footer-col"><h3 data-i18n="contactUs">Wasiliana Nasi</h3><a href="mailto:info@locallang.co.tz">✉ info@locallang.co.tz</a><a href="tel:+255700000000">☎ +255 700 000 000</a><span>⌖ <span data-i18n="tanzania">Tanzania</span></span></div>
+      <div class="footer-flag"><div class="tanzania-flag" aria-label="Bendera ya Tanzania" data-i18n-aria="tanzaniaFlag"></div><strong data-i18n="tanzania">Tanzania</strong><span data-i18n="footerNation">Lugha nyingi, taifa moja.</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> LocalLang Tanzania. <span data-i18n="copyright">Haki zote zimehifadhiwa.</span></span><div><a href="#" data-i18n="privacy">Faragha</a><a href="#" data-i18n="terms">Masharti</a><a href="#" data-i18n="support">Msaada</a></div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
